@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		90079A0A1E054D4700347DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90079A091E054D4700347DBC /* AppDelegate.swift */; };
-		90079A0C1E054D4700347DBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90079A0B1E054D4700347DBC /* ViewController.swift */; };
 		90079A0F1E054D4700347DBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90079A0D1E054D4700347DBC /* Main.storyboard */; };
 		90079A111E054D4700347DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90079A101E054D4700347DBC /* Assets.xcassets */; };
 		90079A141E054D4700347DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90079A121E054D4700347DBC /* LaunchScreen.storyboard */; };
+		90079A1C1E054DF100347DBC /* FromViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90079A1B1E054DF100347DBC /* FromViewController.swift */; };
+		90079A1E1E05503200347DBC /* ToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90079A1D1E05503200347DBC /* ToViewController.swift */; };
+		90079A201E057C7600347DBC /* TransitionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90079A1F1E057C7600347DBC /* TransitionProtocol.swift */; };
+		90079A221E05808200347DBC /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90079A211E05808200347DBC /* Transition.swift */; };
+		90079A241E05902200347DBC /* UIImageView+addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90079A231E05902200347DBC /* UIImageView+addition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		90079A061E054D4700347DBC /* TransitionSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitionSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90079A091E054D4700347DBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90079A0B1E054D4700347DBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		90079A0E1E054D4700347DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		90079A101E054D4700347DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		90079A131E054D4700347DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90079A151E054D4700347DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90079A1B1E054DF100347DBC /* FromViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FromViewController.swift; sourceTree = "<group>"; };
+		90079A1D1E05503200347DBC /* ToViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToViewController.swift; sourceTree = "<group>"; };
+		90079A1F1E057C7600347DBC /* TransitionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionProtocol.swift; sourceTree = "<group>"; };
+		90079A211E05808200347DBC /* Transition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		90079A231E05902200347DBC /* UIImageView+addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+addition.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				90079A091E054D4700347DBC /* AppDelegate.swift */,
-				90079A0B1E054D4700347DBC /* ViewController.swift */,
+				90079A231E05902200347DBC /* UIImageView+addition.swift */,
+				90079A1F1E057C7600347DBC /* TransitionProtocol.swift */,
+				90079A1B1E054DF100347DBC /* FromViewController.swift */,
+				90079A1D1E05503200347DBC /* ToViewController.swift */,
+				90079A211E05808200347DBC /* Transition.swift */,
 				90079A0D1E054D4700347DBC /* Main.storyboard */,
 				90079A101E054D4700347DBC /* Assets.xcassets */,
 				90079A121E054D4700347DBC /* LaunchScreen.storyboard */,
@@ -137,7 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90079A0C1E054D4700347DBC /* ViewController.swift in Sources */,
+				90079A241E05902200347DBC /* UIImageView+addition.swift in Sources */,
+				90079A221E05808200347DBC /* Transition.swift in Sources */,
+				90079A1C1E054DF100347DBC /* FromViewController.swift in Sources */,
+				90079A201E057C7600347DBC /* TransitionProtocol.swift in Sources */,
+				90079A1E1E05503200347DBC /* ToViewController.swift in Sources */,
 				90079A0A1E054D4700347DBC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,10 +275,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 79Q7G522V8;
 				INFOPLIST_FILE = TransitionSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MTJ.TransitionSample;
+				PRODUCT_BUNDLE_IDENTIFIER = JunnosukeMatsumoto.TransitionSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -272,10 +289,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 79Q7G522V8;
 				INFOPLIST_FILE = TransitionSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MTJ.TransitionSample;
+				PRODUCT_BUNDLE_IDENTIFIER = JunnosukeMatsumoto.TransitionSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -300,6 +318,7 @@
 				90079A1A1E054D4700347DBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

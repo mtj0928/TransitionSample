@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  TransitionSample
 //
-//  Created by 松本淳之介 on 2016/12/17.
-//  Copyright © 2016年 mtj. All rights reserved.
+//  Created by Junnosuke Matsumoto on 2016/12/17.
+//  Copyright © 2016年 Junnosuke Matsumoto. All rights reserved.
 //
 
 import UIKit
